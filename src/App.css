@@ -1,0 +1,79 @@
+.whole-page {
+  display: flex;
+  justify-content: center; /* Center the content area */
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  height: 100vh;
+  position: relative; /* Needed for absolute positioning relative to this container */
+}
+
+.content {
+  flex: 1; /* Allow the content to fill the available space */
+  padding-right: 200px; /* Space for the sidebar */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.discover-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align children */
+}
+
+.listing-container {
+  text-align: center; /* Center-align the contents */
+}
+
+.dog-name {
+  margin: 1rem 0;
+}
+
+.image-container {
+  width: 500px; /* Fixed width */
+  height: 500px; /* Fixed height */
+  margin: 0 auto 1rem; /* Center the container and add margin below */
+}
+
+.dog-image {
+  width: 100%; /* Set width to fill the container */
+  height: 100%; /* Set height to fill the container */
+  object-fit: cover; /* This will cover the area, potentially cropping the image */
+}
+
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  text-align: center; /* Align text to the left */
+}
+
+.sidebar ul {
+  list-style: none; /* Remove list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  text-align: center; /* Align text for list to the left */
+}
+
+.sidebar li {
+  text-align: center; /* Align list items text to the left */
+  margin-bottom: 5px; /* Space between list items */
+}
